@@ -1,0 +1,49 @@
+{
+  "name": "@i18n-pro/vue",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "lint-code": "npx lint-staged",
+    "lint-msg": "npx commitlint --edit",
+    "test": "vitest --ui",
+    "coverage": "vitest --coverage"
+  },
+  "author": "Eyelly Wu",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.3",
+    "@commitlint/config-conventional": "^17.4.3",
+    "@eyelly/prettier-config": "^1.0.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/vue": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "@vitejs/plugin-vue": "^2.3.4",
+    "@vitest/coverage-istanbul": "^0.28.5",
+    "@vitest/ui": "^0.28.5",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-formatter-table": "^7.32.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "jsdom": "^21.1.0",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4",
+    "tslib": "^2.5.0",
+    "typescript": "4.8.4",
+    "vitest": "^0.28.5"
+  },
+  "peerDependencies": {
+    "i18n-pro": ">=2.0.0",
+    "vue": "3"
+  },
+  "dependencies": {
+    "i18n-pro": "1.3.2",
+    "vue": "3"
+  },
+  "lint-staged": {
+    "*.{json,ts,tsx,js}": "eslint --fix -f table"
+  }
+}
