@@ -1,14 +1,38 @@
 {
   "name": "@i18n-pro/vue",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0-alpha.1",
+  "description": "Lightweight, simple, flexible, automatic translation internationalization tool for Vue（适用于 Vue 的轻量、简单、灵活、自动翻译的国际化工具）",
+  "keywords": [
+    "vue",
+    "i18n",
+    "vue-i18n",
+    "vue-intl",
+    "intl",
+    "i18n",
+    "internationalization",
+    "locale",
+    "l10n",
+    "localization",
+    "translate",
+    "translation",
+    "国际化",
+    "多语言",
+    "自动翻译",
+    "automatic translation"
+  ],
+  "module": "dist/src/index.min.js",
+  "types": "./dist/src/index.d.ts",
+  "files": [
+    "dist/src"
+  ],
   "scripts": {
     "prepare": "husky install",
     "lint-code": "npx lint-staged",
     "lint-msg": "npx commitlint --edit",
     "test": "vitest --ui",
-    "coverage": "vitest --coverage"
+    "coverage": "vitest --coverage",
+    "build": "rimraf dist/src && rollup -c",
+    "publish": "npm run build && npm publish --access=public --registry https://registry.npmjs.org"
   },
   "author": "Eyelly Wu",
   "license": "MIT",
@@ -31,6 +55,11 @@
     "jsdom": "^21.1.0",
     "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
+    "rimraf": "^5.0.1",
+    "rollup": "^2.77.3",
+    "rollup-plugin-prettier": "^3.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.35.0",
     "tslib": "^2.5.0",
     "typescript": "4.8.4",
     "vitest": "^0.28.5"
@@ -44,6 +73,10 @@
     "vue": "3"
   },
   "lint-staged": {
-    "*.{json,ts,tsx,js}": "eslint --fix -f table"
+    "*.{json,ts,tsx,js,vue}": "eslint --fix -f table"
+  },
+  "homepage": "https://github.com/i18n-pro/vue",
+  "bugs": {
+    "url": "https://github.com/i18n-pro/vue/issues"
   }
 }
