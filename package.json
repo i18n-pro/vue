@@ -1,6 +1,6 @@
 {
   "name": "@i18n-pro/vue",
-  "version": "0.1.0-alpha.2",
+  "version": "vdoc",
   "description": "Lightweight, simple, flexible, automatic translation internationalization tool for Vue（适用于 Vue 的轻量、简单、灵活、自动翻译的国际化工具）",
   "keywords": [
     "vue",
@@ -32,7 +32,9 @@
     "test": "vitest --ui",
     "coverage": "vitest --coverage",
     "build": "rimraf dist/src && rollup -c",
-    "publish": "npm run build && npm publish --access=public --registry https://registry.npmjs.org"
+    "publish": "npm run build && npm publish --access=public --registry https://registry.npmjs.org",
+    "docs": "jtm run",
+    "docs-translate": "i18n t -P docs/src"
   },
   "author": "Eyelly Wu",
   "license": "MIT",
@@ -53,6 +55,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "jsdom": "^21.1.0",
+    "jsx-to-md": "^0.11.4",
     "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
     "rimraf": "^5.0.1",
@@ -66,11 +69,11 @@
   },
   "peerDependencies": {
     "i18n-pro": ">=2.0.0",
-    "vue": "3"
+    "vue": ">=3.2.25"
   },
   "dependencies": {
     "i18n-pro": "2.0.0",
-    "vue": "3"
+    "vue": "^3.2.25"
   },
   "lint-staged": {
     "*.{json,ts,tsx,js,vue}": "eslint --fix -f table"
@@ -78,5 +81,9 @@
   "homepage": "https://github.com/i18n-pro/vue",
   "bugs": {
     "url": "https://github.com/i18n-pro/vue/issues"
+  },
+  "codeNameMap": {
+    "en": "",
+    "zh": "zh-CN"
   }
 }

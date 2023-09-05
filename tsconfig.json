@@ -10,7 +10,9 @@
     "outDir": "dist",
     "resolveJsonModule": true,
     "declaration": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "jsx-to-md"
   },
-  "include": ["src/"]
+  "include": ["docs"]
 }
