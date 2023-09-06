@@ -1,7 +1,7 @@
 <div align="center">
   <p style="font-size: 18px;">适用于 Vue 的轻量、简单、灵活、自动翻译的国际化工具</p>
 
-[English](https://github.com/i18n-pro/vue/tree/vvdoc#readme) | 简体中文
+[English](https://github.com/i18n-pro/vue/tree/vdoc#readme) | 简体中文
 
 
 
@@ -33,6 +33,7 @@
 为了让接入国际化成为轻松且愉快的事😄💪🏻
 # 要求
 
+>当前库仅适用于 `Vue 3.0` , 需要支持 `Vue 2.0` 的请点击 [i18n-pro/vue2](https://github.com/i18n-pro/vue2) 查看
 * vue >= **3.2.25**
 * i18n-pro >= **2.0.0**
 
@@ -103,9 +104,9 @@ createApp(App)
 
 >为了避免不必要的重复文档内容，该库的部分文档是链接 `i18n-pro` 中的内容<br />当前文档中 `i18n-pro` 相关链接是基于 `2.0.0` 版本，如果你使用的非该版本，需查看你所使用版本对应的文档，以免用法不一致
 * 当前库
-   * [快速上手](https://github.com/i18n-pro/vue/blob/vvdoc/docs/dist/USAGE_zh-CN.md)
-   * [API](https://github.com/i18n-pro/vue/blob/vvdoc/docs/dist/API_zh-CN.md)
-   * [更新日志](https://github.com/i18n-pro/vue/blob/vvdoc/docs/dist/CHANGELOG_zh-CN.md)
+   * [快速上手](https://github.com/i18n-pro/vue/blob/vdoc/docs/dist/USAGE_zh-CN.md)
+   * [API](https://github.com/i18n-pro/vue/blob/vdoc/docs/dist/API_zh-CN.md)
+   * [更新日志](https://github.com/i18n-pro/vue/blob/vdoc/docs/dist/CHANGELOG_zh-CN.md)
 * i18n-pro
    * [命令行](https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/COMMAND_LINE_zh-CN.md)
    * [匹配规则](https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/MATCH_RULE_zh-CN.md)

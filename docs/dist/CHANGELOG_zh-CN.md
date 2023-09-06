@@ -2,7 +2,7 @@
 # 更新日志
 
 
-[English](https://github.com/i18n-pro/vue/blob/vvdoc/docs/dist/CHANGELOG.md) | 简体中文
+[English](https://github.com/i18n-pro/vue/blob/vdoc/docs/dist/CHANGELOG.md) | 简体中文
 
 
 <details >

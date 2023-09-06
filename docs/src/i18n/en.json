@@ -46,7 +46,7 @@
   "当前库": "Current Library",
   "要求": "Requirement",
   "接入API": "Access API",
-  "配置初始状态": "Configure initial state",
+  "配置初始状态": "Configure Initial State",
   "请参考": "Please refer to",
   "可以通过{0}来切换语言": "You can switch languages through {0}",
   "真实代码示例可参考{0}文档中的{1}": "Real code examples can refer to {1} in the {0} document",
@@ -57,7 +57,9 @@
   "新增{0}基础实现": "Add {0} base implementation",
   "该库是基于{0}结合{1}的{2}来实现的": "This library is implemented based on {0} combined with {1}'s {2}",
   "适用于 {0} 的轻量、简单、灵活、自动翻译的国际化工具": "Lightweight, simple, flexible, automatic translation internationalization tool for {0}",
-  "注册插件": "Register plugin",
+  "注册插件": "Register Plugin",
   "用{0}包裹{1}": "Wrap {1} with {0}",
-  "初始化国际化状态并返回其插件函数": "Initialize internationalization state and return its plugin function"
+  "初始化国际化状态并返回其插件函数": "Initialize internationalization state and return its plugin function",
+  "全局属性、响应式机制和插件机制": "Global Properties, Reactivity System and Plugin System",
+  "当前库仅适用于{0}, 需要支持{1}的请点击{2}查看": "The current library is only applicable to {0}. If you need to support {1}, please click {2} to view"
 }

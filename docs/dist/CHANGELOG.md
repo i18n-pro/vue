@@ -2,7 +2,7 @@
 # Changelog
 
 
-English | [简体中文](https://github.com/i18n-pro/vue/blob/vvdoc/docs/dist/CHANGELOG_zh-CN.md)
+English | [简体中文](https://github.com/i18n-pro/vue/blob/vdoc/docs/dist/CHANGELOG_zh-CN.md)
 
 
 <details >

@@ -9,7 +9,7 @@ export default function Principle() {
         '该库是基于{0}结合{1}的{2}来实现的',
         getI18nPro('link'),
         ' `Vue` ',
-        ' `全局属性、响应式机制和插件机制` ',
+        ` \`${t('全局属性、响应式机制和插件机制')}\` `,
       )}
       <Break />
       <Break />

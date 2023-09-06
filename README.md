@@ -1,7 +1,7 @@
 <div align="center">
   <p style="font-size: 18px;">Lightweight, simple, flexible, automatic translation internationalization tool for Vue</p>
 
-English | [简体中文](https://github.com/i18n-pro/vue/blob/vvdoc/README_zh-CN.md)
+English | [简体中文](https://github.com/i18n-pro/vue/blob/vdoc/README_zh-CN.md)
 
 
 
@@ -33,6 +33,7 @@ English | [简体中文](https://github.com/i18n-pro/vue/blob/vvdoc/README_zh-CN
 To make internationalization easy and enjoyable 😄💪🏻
 # Requirement
 
+>The current library is only applicable to  `Vue 3.0` . If you need to support  `Vue 2.0` , please click  [i18n-pro/vue2](https://github.com/i18n-pro/vue2)  to view
 * vue >= **3.2.25**
 * i18n-pro >= **2.0.0**
 
@@ -58,7 +59,7 @@ To make internationalization easy and enjoyable 😄💪🏻
 
 
 # Principle
-This library is implemented based on  [i18n-pro](https://github.com/i18n-pro/core "i18n-pro")  combined with  `Vue` 's  `全局属性、响应式机制和插件机制` 
+This library is implemented based on  [i18n-pro](https://github.com/i18n-pro/core "i18n-pro")  combined with  `Vue` 's  `Global Properties, Reactivity System and Plugin System` 
 
 Mainly composed of  `1`  parts
 * createI18n
@@ -103,9 +104,9 @@ createApp(App)
 
 >To avoid unnecessary duplicate document content, some of the documents in this library are linked to the content in  `i18n-pro` <br />The  `i18n-pro`  related link in the current document is based on the  `2.0.0`  version. If you are using a different version, you need to check the document corresponding to the version you are using to avoid inconsistent usage
 * Current Library
-   * [Quick Start](https://github.com/i18n-pro/vue/blob/vvdoc/docs/dist/USAGE.md)
-   * [API](https://github.com/i18n-pro/vue/blob/vvdoc/docs/dist/API.md)
-   * [Changelog](https://github.com/i18n-pro/vue/blob/vvdoc/docs/dist/CHANGELOG.md)
+   * [Quick Start](https://github.com/i18n-pro/vue/blob/vdoc/docs/dist/USAGE.md)
+   * [API](https://github.com/i18n-pro/vue/blob/vdoc/docs/dist/API.md)
+   * [Changelog](https://github.com/i18n-pro/vue/blob/vdoc/docs/dist/CHANGELOG.md)
 * i18n-pro
    * [Command Line](https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/COMMAND_LINE.md)
    * [Matching Rules](https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/MATCH_RULE.md)

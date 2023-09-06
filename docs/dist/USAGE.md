@@ -7,8 +7,8 @@
 
   &emsp;&emsp;[1. Install](#1-install)<br/>
   &emsp;&emsp;[2. Access API](#2-access-api)<br/>
-  &emsp;&emsp;&emsp;&emsp;[Configure initial state](#configure-initial-state)<br/>
-  &emsp;&emsp;&emsp;&emsp;[Register plugin](#register-plugin)<br/>
+  &emsp;&emsp;&emsp;&emsp;[Configure Initial State](#configure-initial-state)<br/>
+  &emsp;&emsp;&emsp;&emsp;[Register Plugin](#register-plugin)<br/>
   &emsp;&emsp;&emsp;&emsp;[Wrap  `Translation Text`  with  `$t` ](#wrap--translation-text--with--$t)<br/>
   &emsp;&emsp;[3. Initialize Command Line Configuration File](#3-initialize-command-line-configuration-file)<br/>
   &emsp;&emsp;[4. Adjust  `i18nrc.js`  Configuration](#4-adjust--i18nrcjs--configuration)<br/>
@@ -32,7 +32,7 @@ pnpm i i18n-pro @i18n-pro/vue
 
 ## 2. Access API
 
-### Configure initial state
+### Configure Initial State
 
 ```js
 // i18n.ts
@@ -43,7 +43,7 @@ export default createI18n({
 })
 ```
 
-### Register plugin
+### Register Plugin
 
 ```js
 // main.ts
@@ -139,4 +139,4 @@ You can switch languages through  `$setI18n`
 
 
 ## 8. Demo
-Real code examples can refer to  [Live Demo](https://github.com/i18n-pro/vue/tree/vvdoc#live-demo)  in the  `README`  document
+Real code examples can refer to  [Live Demo](https://github.com/i18n-pro/vue/tree/vdoc#live-demo)  in the  `README`  document
