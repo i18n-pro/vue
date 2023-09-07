@@ -61,12 +61,13 @@ To make internationalization easy and enjoyable 😄💪🏻
 # Principle
 This library is implemented based on  [i18n-pro](https://github.com/i18n-pro/core "i18n-pro")  combined with  `Vue` 's  `Global Properties, Reactivity System and Plugin System` 
 
-Mainly composed of  `1`  parts
+Mainly composed of  `2`  parts
 * createI18n
+* useI18n
 
 
 
-**createI18n**：Initialize internationalization state and return its plugin function
+**createI18n**：Initialize internationalization state and return its plugin function<br />**useI18n**：Methods to get internationalization state and API in  `Composition API` 
 
 
 

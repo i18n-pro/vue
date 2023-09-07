@@ -8,7 +8,10 @@ function V_1_0_0() {
       version="1.0.0"
       date="2023-09-xx"
       api={{
-        added: ['U', t('新增{0}基础实现', ' `createI18n` ')],
+        added: [
+          'U',
+          t('新增{0}和{1}基础实现', ' `createI18n` ', ' `useI18n` '),
+        ],
       }}
     />
   )

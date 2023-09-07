@@ -20,5 +20,5 @@ English | [简体中文](https://github.com/i18n-pro/vue/blob/vdoc/docs/dist/CHA
 
 <h4 id="100-api-added">Added</h4>
 
-* Add  `createI18n`  base implementation
+* Add basic implementation for  `createI18n`  and  `useI18n` 
 

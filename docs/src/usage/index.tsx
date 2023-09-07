@@ -16,6 +16,8 @@ import {
   getTranslationText,
   packageName,
   getI18nProDocHref,
+  getCompositionAPI,
+  getOptionsAPI,
 } from '../utils'
 import SpecialStatement from '../components/SpecialStatement'
 
@@ -208,6 +210,37 @@ function SwitchLang() {
       <Break />
       <H2>{`7. ${t('切换语言')}`}</H2>
       {t('可以通过{0}来切换语言', ' `$setI18n` ')}
+      <H3>{getCompositionAPI()}</H3>
+      <CodeBlock
+        langType="diff"
+        code={`
+// App.tsx
+<template>
+  <div> {{ $t('hello world') }} </div>
++  <select
++    :value="$i18nState.locale"
++    @change="onSelectChange"
++  >
++    <option value="zh">简体中文</option>
++    <option value="en">English</option>
++    <option value="ja">日本語</option>
++  </select>
+</template>
++
++ <script setup>
++ import { useI18n } from '${showPackageName}'
++
++ const { $setI18n } = useI18n()
++
++ onSelectChange(e){
++   $setI18n({
++     locale: e.target.value,
++   })
++ }
++ </script>
+`}
+      />
+      <H3>{getOptionsAPI()}</H3>
       <CodeBlock
         langType="diff"
         code={`

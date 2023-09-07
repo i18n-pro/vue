@@ -54,12 +54,16 @@
   "会在 Vue 的全局属性上注册如下 3 个属性，它们各自的类型及使用说明可点击链接查看": "It will register the following 3 properties on Vue's global properties. You can click on the links to view their respective types and usage instructions",
   "注册的全局属性，使用时是否需要带前缀{0}": "Registered global attributes, do you need to bring prefix {0} when used",
   "默认为 true，只能通过{0}来访问属性；若配置为 false，则可以直接通过{1}来访问属性": "The default is TRUE, you can only access the attribute through {0}; if configured to false, you can directly access the attribute through {1}",
-  "新增{0}基础实现": "Add {0} base implementation",
   "该库是基于{0}结合{1}的{2}来实现的": "This library is implemented based on {0} combined with {1}'s {2}",
   "适用于 {0} 的轻量、简单、灵活、自动翻译的国际化工具": "Lightweight, simple, flexible, automatic translation internationalization tool for {0}",
   "注册插件": "Register Plugin",
   "用{0}包裹{1}": "Wrap {1} with {0}",
   "初始化国际化状态并返回其插件函数": "Initialize internationalization state and return its plugin function",
   "全局属性、响应式机制和插件机制": "Global Properties, Reactivity System and Plugin System",
-  "当前库仅适用于{0}, 需要支持{1}的请点击{2}查看": "The current library is only applicable to {0}. If you need to support {1}, please click {2} to view"
+  "当前库仅适用于{0}, 需要支持{1}的请点击{2}查看": "The current library is only applicable to {0}. If you need to support {1}, please click {2} to view",
+  "该属性配置后，针对{0}和{1}都会生效": "After configuring this property, it will take effect for both {0} and {1}",
+  "新增{0}和{1}基础实现": "Add basic implementation for {0} and {1}",
+  "在{0}中获取国际化状态和 API 的方法": "Methods to get internationalization state and API in {0}",
+  "组合式 API": "Composition API",
+  "选项式 API": "Options API"
 }

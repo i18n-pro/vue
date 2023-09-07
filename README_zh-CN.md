@@ -61,12 +61,13 @@
 # 原理
 该库是基于 [i18n-pro](https://github.com/i18n-pro/core "i18n-pro") 结合 `Vue` 的 `全局属性、响应式机制和插件机制` 来实现的
 
-主要由 `1` 部分构成
+主要由 `2` 部分构成
 * createI18n
+* useI18n
 
 
 
-**createI18n**：初始化国际化状态并返回其插件函数
+**createI18n**：初始化国际化状态并返回其插件函数<br />**useI18n**：在 `组合式 API` 中获取国际化状态和 API 的方法
 
 
 

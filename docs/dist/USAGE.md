@@ -15,6 +15,8 @@
   &emsp;&emsp;[5. Execute Translation Command](#5-execute-translation-command)<br/>
   &emsp;&emsp;[6. Importing Language Pack](#6-importing-language-pack)<br/>
   &emsp;&emsp;[7. Switch Language](#7-switch-language)<br/>
+  &emsp;&emsp;&emsp;&emsp;[ `Composition API` ](#-composition-api)<br/>
+  &emsp;&emsp;&emsp;&emsp;[ `Options API` ](#-options-api)<br/>
   &emsp;&emsp;[8. Demo](#8-demo)<br/>
 
 </details>
@@ -110,6 +112,37 @@ At this point, the project has been completely connected to internationalization
 
 ## 7. Switch Language
 You can switch languages through  `$setI18n` 
+###  `Composition API` 
+
+```diff
+// App.tsx
+<template>
+  <div> {{ $t('hello world') }} </div>
++  <select
++    :value="$i18nState.locale"
++    @change="onSelectChange"
++  >
++    <option value="zh">简体中文</option>
++    <option value="en">English</option>
++    <option value="ja">日本語</option>
++  </select>
+</template>
++
++ <script setup>
++ import { useI18n } from '@i18n-pro/vue'
++
++ const { $setI18n } = useI18n()
++
++ onSelectChange(e){
++   $setI18n({
++     locale: e.target.value,
++   })
++ }
++ </script>
+```
+
+###  `Options API` 
+
 ```diff
 // App.tsx
 <template>

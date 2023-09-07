@@ -233,3 +233,15 @@ export function renderLanguage(filename: string) {
 export function getCreateI18nDesc() {
   return t('初始化国际化状态并返回其插件函数')
 }
+
+export function getUseI18nDesc() {
+  return t('在{0}中获取国际化状态和 API 的方法', getCompositionAPI())
+}
+
+export function getCompositionAPI(normal = false) {
+  return getText(t('组合式 API'), normal)
+}
+
+export function getOptionsAPI(normal = false) {
+  return getText(t('选项式 API'), normal)
+}

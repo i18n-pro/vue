@@ -20,5 +20,5 @@
 
 <h4 id="100-api-added">Added</h4>
 
-* 新增 `createI18n` 基础实现
+* 新增 `createI18n` 和 `useI18n` 基础实现
 

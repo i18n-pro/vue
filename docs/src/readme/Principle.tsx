@@ -1,5 +1,5 @@
 import { Break, H1, Bold, CodeBlock, List } from 'jsx-to-md'
-import { getCreateI18nDesc, getI18nPro } from '../utils'
+import { getCreateI18nDesc, getI18nPro, getUseI18nDesc } from '../utils'
 
 export default function Principle() {
   return (
@@ -13,11 +13,13 @@ export default function Principle() {
       )}
       <Break />
       <Break />
-      {t('主要由{0}部分构成', ' `1` ')}
-      <List items={['U', 'createI18n']} />
+      {t('主要由{0}部分构成', ' `2` ')}
+      <List items={['U', 'createI18n', 'useI18n']} />
       <Break />
       <Break />
       <Bold>createI18n</Bold>：{getCreateI18nDesc()}
+      <br />
+      <Bold>useI18n</Bold>：{getUseI18nDesc()}
       <Break />
       <Break />
       <Break />

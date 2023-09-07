@@ -15,6 +15,8 @@
   &emsp;&emsp;[5. 执行翻译命令](#5-执行翻译命令)<br/>
   &emsp;&emsp;[6. 引入语言包](#6-引入语言包)<br/>
   &emsp;&emsp;[7. 切换语言](#7-切换语言)<br/>
+  &emsp;&emsp;&emsp;&emsp;[ `组合式 API` ](#-组合式-api)<br/>
+  &emsp;&emsp;&emsp;&emsp;[ `选项式 API` ](#-选项式-api)<br/>
   &emsp;&emsp;[8. Demo](#8-demo)<br/>
 
 </details>
@@ -110,6 +112,37 @@ export default createI18n({
 
 ## 7. 切换语言
 可以通过 `$setI18n` 来切换语言
+###  `组合式 API` 
+
+```diff
+// App.tsx
+<template>
+  <div> {{ $t('hello world') }} </div>
++  <select
++    :value="$i18nState.locale"
++    @change="onSelectChange"
++  >
++    <option value="zh">简体中文</option>
++    <option value="en">English</option>
++    <option value="ja">日本語</option>
++  </select>
+</template>
++
++ <script setup>
++ import { useI18n } from '@i18n-pro/vue'
++
++ const { $setI18n } = useI18n()
++
++ onSelectChange(e){
++   $setI18n({
++     locale: e.target.value,
++   })
++ }
++ </script>
+```
+
+###  `选项式 API` 
+
 ```diff
 // App.tsx
 <template>

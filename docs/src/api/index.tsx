@@ -2,7 +2,14 @@ import { H1, render, TableOfContents, List } from 'jsx-to-md'
 import I18nProWrapper from '../components/I18nProWrapper'
 import SpecialStatement from '../components/SpecialStatement'
 import { Package } from '../types'
-import { getCreateI18nDesc, getI18nProDocHref, initI18n } from '../utils'
+import {
+  getCompositionAPI,
+  getCreateI18nDesc,
+  getI18nProDocHref,
+  getOptionsAPI,
+  getUseI18nDesc,
+  initI18n,
+} from '../utils'
 import FunctionTemplate from './FunctionTemplate'
 
 type I18nProProps = {
@@ -76,9 +83,41 @@ function CreateI18n(props: I18nProProps) {
                   </>,
                 )} `,
               )}
+              <br />
+              {t(
+                '该属性配置后，针对{0}和{1}都会生效',
+                ` ${render(
+                  <>
+                    <code>{getOptionsAPI(true)}</code>
+                  </>,
+                )} `,
+                ` ${render(
+                  <>
+                    <code>{getCompositionAPI(true)}</code>
+                  </>,
+                )} `,
+              )}
             </>
           ),
         }}
+      />
+    </>
+  )
+}
+
+function UseI18n(props: I18nProProps) {
+  const { i18nProPkg } = props
+
+  return (
+    <>
+      <FunctionTemplate
+        name="useI18n"
+        description={getUseI18nDesc()}
+        type={`() => ({
+  ${getTitleToA(i18nProPkg, 't', '$t')},
+  ${getTitleToA(i18nProPkg, 'setI18n', '$setI18n')},
+  ${getTitleToA(i18nProPkg, 'i18nState', '$i18nState')},
+})`}
       />
     </>
   )
@@ -95,6 +134,7 @@ export default function API(props) {
           <SpecialStatement i18nProPkg={i18nProPkg} />
           <TableOfContents text={t('目录')} open={false} />
           <CreateI18n i18nProPkg={i18nProPkg} />
+          <UseI18n i18nProPkg={i18nProPkg} />
         </>
       )}
     </I18nProWrapper>
