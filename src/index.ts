@@ -1,9 +1,10 @@
 import { I18nState, initI18n, SetI18n } from 'i18n-pro'
 export { Langs, I18nState, SetI18n, Translate } from 'i18n-pro'
 import type { App } from 'vue'
-import { ref } from 'vue'
+import { ref, inject } from 'vue'
 
 const installNamespace: string[] = []
+const PROVIDER_KEY = 'i18n-pro/vue'
 
 export function createI18n(props: I18nState & { with$?: boolean }) {
   return function install(app: App) {
@@ -27,16 +28,30 @@ export function createI18n(props: I18nState & { with$?: boolean }) {
       return newState
     }
 
+    const setI18nName = `${prefix}setI18n`
+    const tName = `${prefix}t`
+    const i18nStateName = `${prefix}i18nState`
+
+    app.provide(PROVIDER_KEY, {
+      [setI18nName]: setI18n,
+      [tName]: tRef,
+      [i18nStateName]: i18nStateRef,
+    })
+
     Object.defineProperties(app.config.globalProperties, {
-      [`${prefix}setI18n`]: {
+      [setI18nName]: {
         get: () => setI18n,
       },
-      [`${prefix}t`]: {
+      [tName]: {
         get: () => tRef.value,
       },
-      [`${prefix}i18nState`]: {
+      [i18nStateName]: {
         get: () => i18nStateRef.value,
       },
     })
   }
+}
+
+export function useI18n() {
+  return inject(PROVIDER_KEY)
 }

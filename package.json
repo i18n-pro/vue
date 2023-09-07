@@ -76,7 +76,7 @@
     "vue": "^3.2.25"
   },
   "lint-staged": {
-    "*.{json,ts,tsx,js,vue}": "eslint --fix -f table"
+    "*.{json,ts,tsx,js}": "eslint --fix -f table"
   },
   "homepage": "https://github.com/i18n-pro/vue",
   "bugs": {

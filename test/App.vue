@@ -26,27 +26,23 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { defineProps, computed } from 'vue';
+import { useI18n } from '../src/index'
 import Child from './Child.vue'
 
-export default {
-  components: {
-    Child
-  },
-  props: {
-    with$: Boolean,
-  },
-  computed: {
-    currentLocale() {
-      const state = this.with$ ? this.$i18nState : this.i18nState
-      return state.locale
-    }
-  },
-  methods: {
-    currentSetI18n(props) {
-      const func = this.with$ ? this.$setI18n : this.setI18n
-      func(props)
-    }
-  }
+const i18n = useI18n()
+const { with$ } = defineProps({
+  with$: Boolean,
+})
+
+const currentLocale = computed(() => {
+  const i18nState = with$ ? i18n.$i18nState : i18n.i18nState
+  return i18nState.value.locale
+})
+
+function currentSetI18n(props) {
+  const func = with$ ? i18n.$setI18n : i18n.setI18n
+  func(props)
 }
 </script>
