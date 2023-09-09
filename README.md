@@ -33,7 +33,7 @@ English | [简体中文](https://github.com/i18n-pro/vue/blob/vdoc/README_zh-CN.
 To make internationalization easy and enjoyable 😄💪🏻
 # Requirement
 
->The current library is only applicable to  `Vue 3.0` . If you need to support  `Vue 2.0` , please click  [i18n-pro/vue2](https://github.com/i18n-pro/vue2)  to view
+>The current library is only applicable to  `Vue 3` . If you need to support  `Vue 2` , please click  [i18n-pro/vue2](https://github.com/i18n-pro/vue2)  to view
 * vue >= **3.2.25**
 * i18n-pro >= **2.0.0**
 
