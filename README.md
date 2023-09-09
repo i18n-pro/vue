@@ -67,7 +67,7 @@ Mainly composed of  `2`  parts
 
 
 
-**createI18n**：Initialize internationalization state and return its plugin function<br />**useI18n**：Methods to get internationalization state and API in  `Composition API` 
+**createI18n**：Initialize internationalization state and return its plugin function<br />**useI18n**：Method to get internationalization state and API in  `Composition API` 
 
 
 
@@ -112,7 +112,7 @@ createApp(App)
    * [Command Line](https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/COMMAND_LINE.md)
    * [Matching Rules](https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/MATCH_RULE.md)
    * [Q&A](https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/Q&A.md)
-   * [Translation log](https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/OUTPUT_LOG.md)
+   * [Translation Log](https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/OUTPUT_LOG.md)
 
 
 # License

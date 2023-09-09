@@ -54,7 +54,7 @@ function CreateI18n(props: I18nProProps) {
         propsDesc={
           <>
             {t(
-              '其他属性与{0}参数一致',
+              '其他参数与{0}参数一致',
               ` ${render(
                 <a href={getI18nProDocHref(i18nProPkg, 'API', 'initI18n')}>
                   initI18n

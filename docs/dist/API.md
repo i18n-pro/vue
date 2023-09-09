@@ -28,7 +28,7 @@ Initialize internationalization state and return its plugin function<br />It wil
 </pre>
 
 <h3 id="createi18n-parameter-description">Parameter Description</h3>
-The other attributes are consistent with the  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API.md#initi18n">initI18n</a>  parameter<table>
+The other parameters are consistent with the  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API.md#initi18n">initI18n</a>  parameters<table>
   <tr>
     <th>Parameter name</th>
     <th>Description</th>
@@ -37,14 +37,14 @@ The other attributes are consistent with the  <a href="https://github.com/i18n-p
     <tr>
       <td>with$</td>
       <td>
-        Registered global attributes, do you need to bring prefix $ when used<br /><br />The default is TRUE, you can only access the attribute through  <code>$t</code>, <code>$setI18n</code>, <code>$i18nState</code> ; if configured to false, you can directly access the attribute through  <code>t</code>, <code>setI18n</code>, <code>i18nState</code> <br />After configuring this property, it will take effect for both  <code>Options API</code>  and  <code>Composition API</code> 
+        Registered global properties, do you need to bring prefix $ when used<br /><br />The default is TRUE, you can only access the properties through  <code>$t</code>, <code>$setI18n</code>, <code>$i18nState</code> ; if configured to false, you can directly access the properties through  <code>t</code>, <code>setI18n</code>, <code>i18nState</code> <br />After configuring this property, it will take effect for both  <code>Options API</code>  and  <code>Composition API</code> 
       </td>
     </tr>
   </tr>
 </table>
 
 ## useI18n
-Methods to get internationalization state and API in  `Composition API` 
+Method to get internationalization state and API in  `Composition API` 
 <h3 id="usei18n-type">Type</h3>
 <pre>
 () => ({

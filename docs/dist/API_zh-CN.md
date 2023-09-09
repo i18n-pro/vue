@@ -28,7 +28,7 @@
 </pre>
 
 <h3 id="createi18n-参数说明">参数说明</h3>
-其他属性与 <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API_zh-CN.md#initi18n">initI18n</a> 参数一致<table>
+其他参数与 <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API_zh-CN.md#initi18n">initI18n</a> 参数一致<table>
   <tr>
     <th>参数名</th>
     <th>说明</th>
