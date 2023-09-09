@@ -10,7 +10,7 @@
     <button id="unknownBtn" @click="currentSetI18n({ locale: undefined })">
       Unknown
     </button>
-    <button id="jpBtn" @click="currentSetI18n({
+    <button id="jpBtn" @click="currentSetI18n2({
       locale: 'jp',
       langs: {
         jp: {
@@ -22,6 +22,9 @@
     </button>
     <div id="locale">
       {{ currentLocale }}
+    </div>
+    <div id="locale2">
+      {{ currentLocale2 }}
     </div>
   </div>
 </template>
@@ -44,5 +47,25 @@ const currentLocale = computed(() => {
 function currentSetI18n(props) {
   const func = with$ ? i18n.$setI18n : i18n.setI18n
   func(props)
+}
+</script>
+
+<script>
+export default {
+  props: {
+    with$: Boolean,
+  },
+  computed: {
+    currentLocale2() {
+      const state = this.with$ ? this.$i18nState : this.i18nState
+      return state.locale
+    }
+  },
+  methods: {
+    currentSetI18n2(props) {
+      const func = this.with$ ? this.$setI18n : this.setI18n
+      func(props)
+    }
+  }
 }
 </script>
