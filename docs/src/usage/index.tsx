@@ -230,10 +230,10 @@ function SwitchLang() {
 + <script setup>
 + import { useI18n } from '${showPackageName}'
 +
-+ const { $setI18n } = useI18n()
++ const { setI18n } = useI18n()
 +
 + onSelectChange(e){
-+   $setI18n({
++   setI18n({
 +     locale: e.target.value,
 +   })
 + }

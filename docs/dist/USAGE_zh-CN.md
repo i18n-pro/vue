@@ -131,10 +131,10 @@ export default createI18n({
 + <script setup>
 + import { useI18n } from '@i18n-pro/vue'
 +
-+ const { $setI18n } = useI18n()
++ const { setI18n } = useI18n()
 +
 + onSelectChange(e){
-+   $setI18n({
++   setI18n({
 +     locale: e.target.value,
 +   })
 + }
@@ -172,4 +172,4 @@ export default createI18n({
 
 
 ## 8. Demo
-真实代码示例可参考 `README` 文档中的 [Live Demo](https://github.com/i18n-pro/vue/blob/v1.0.0/README_zh-CN.md#live-demo) 
+真实代码示例可参考 `README` 文档中的 [Live Demo](https://github.com/i18n-pro/vue/blob/v1.1.0/README_zh-CN.md#live-demo) 

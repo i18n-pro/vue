@@ -44,13 +44,17 @@
 </table>
 
 ## useI18n
-在 `组合式 API` 中获取国际化状态和 API 的方法
+在 `组合式 API` 中获取国际化状态和 API 的方法<br />注意：由于 `t` 和 `i18nState` 是一个响应式的状态，使用时需要通过 `.value` 的形式，类似如下：
+* t.value('hello world')
+* i18nState.value.locale
+
+
 <h3 id="usei18n-类型">类型</h3>
 <pre>
 () => ({
-  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API_zh-CN.md#t">$t</a>,
-  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API_zh-CN.md#seti18n">$setI18n</a>,
-  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API_zh-CN.md#i18nstate">$i18nState</a>,
+  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API_zh-CN.md#t">t</a>,
+  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API_zh-CN.md#seti18n">setI18n</a>,
+  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API_zh-CN.md#i18nstate">i18nState</a>,
 })
 </pre>
 

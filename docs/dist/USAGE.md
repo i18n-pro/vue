@@ -131,10 +131,10 @@ You can switch languages through  `$setI18n`
 + <script setup>
 + import { useI18n } from '@i18n-pro/vue'
 +
-+ const { $setI18n } = useI18n()
++ const { setI18n } = useI18n()
 +
 + onSelectChange(e){
-+   $setI18n({
++   setI18n({
 +     locale: e.target.value,
 +   })
 + }
@@ -172,4 +172,4 @@ You can switch languages through  `$setI18n`
 
 
 ## 8. Demo
-Real code examples can refer to  [Live Demo](https://github.com/i18n-pro/vue/tree/v1.0.0#live-demo)  in the  `README`  document
+Real code examples can refer to  [Live Demo](https://github.com/i18n-pro/vue/tree/v1.1.0#live-demo)  in the  `README`  document

@@ -44,13 +44,17 @@ The other parameters are consistent with the  <a href="https://github.com/i18n-p
 </table>
 
 ## useI18n
-Method to get internationalization state and API in  `Composition API` 
+Method to get internationalization state and API in  `Composition API` <br />Note: Since  `t`  and  `i18nState`  are reactive states, they need to be accessed with  `.value`  when used, like the following:
+* t.value('hello world')
+* i18nState.value.locale
+
+
 <h3 id="usei18n-type">Type</h3>
 <pre>
 () => ({
-  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API.md#t">$t</a>,
-  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API.md#seti18n">$setI18n</a>,
-  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API.md#i18nstate">$i18nState</a>,
+  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API.md#t">t</a>,
+  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API.md#seti18n">setI18n</a>,
+  <a href="https://github.com/i18n-pro/core/blob/v2.0.0/docs/dist/API.md#i18nstate">i18nState</a>,
 })
 </pre>
 

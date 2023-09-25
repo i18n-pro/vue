@@ -112,11 +112,25 @@ function UseI18n(props: I18nProProps) {
     <>
       <FunctionTemplate
         name="useI18n"
-        description={getUseI18nDesc()}
+        description={
+          <>
+            {getUseI18nDesc()}
+            <br />
+            {t(
+              '注意：由于{0}和{1}是一个响应式的状态，使用时需要通过{2}的形式，类似如下：',
+              ' `t` ',
+              ' `i18nState` ',
+              ' `.value` ',
+            )}
+            <List
+              items={['U', "t.value('hello world')", 'i18nState.value.locale']}
+            />
+          </>
+        }
         type={`() => ({
-  ${getTitleToA(i18nProPkg, 't', '$t')},
-  ${getTitleToA(i18nProPkg, 'setI18n', '$setI18n')},
-  ${getTitleToA(i18nProPkg, 'i18nState', '$i18nState')},
+  ${getTitleToA(i18nProPkg, 't', 't')},
+  ${getTitleToA(i18nProPkg, 'setI18n', 'setI18n')},
+  ${getTitleToA(i18nProPkg, 'i18nState', 'i18nState')},
 })`}
       />
     </>
