@@ -22,7 +22,7 @@ function V_1_1_0() {
       version="1.1.0"
       date="2023-09-25"
       api={{
-        added: [
+        changed: [
           'U',
           [
             t('调整{0}返回的属性名', ' `useI18n` '),

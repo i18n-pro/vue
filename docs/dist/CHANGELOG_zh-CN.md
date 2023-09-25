@@ -10,7 +10,7 @@
 
   &emsp;&emsp;[[1.1.0] - 2023-09-25](#110---2023-09-25)<br/>
   &emsp;&emsp;&emsp;&emsp;[API](#110-api)<br/>
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Added](#110-api-added)<br/>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Changed](#110-api-changed)<br/>
   &emsp;&emsp;[[1.0.0] - 2023-09-09](#100---2023-09-09)<br/>
   &emsp;&emsp;&emsp;&emsp;[API](#100-api)<br/>
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Added](#100-api-added)<br/>
@@ -21,7 +21,7 @@
 
 <h3 id="110-api">API</h3>
 
-<h4 id="110-api-added">Added</h4>
+<h4 id="110-api-changed">Changed</h4>
 
 * 调整 `useI18n` 返回的属性名
    *  `$t` -> `t` 

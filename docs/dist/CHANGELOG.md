@@ -10,7 +10,7 @@ English | [简体中文](https://github.com/i18n-pro/vue/blob/v1.1.0/docs/dist/C
 
   &emsp;&emsp;[[1.1.0] - 2023-09-25](#110---2023-09-25)<br/>
   &emsp;&emsp;&emsp;&emsp;[API](#110-api)<br/>
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Added](#110-api-added)<br/>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Changed](#110-api-changed)<br/>
   &emsp;&emsp;[[1.0.0] - 2023-09-09](#100---2023-09-09)<br/>
   &emsp;&emsp;&emsp;&emsp;[API](#100-api)<br/>
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Added](#100-api-added)<br/>
@@ -21,7 +21,7 @@ English | [简体中文](https://github.com/i18n-pro/vue/blob/v1.1.0/docs/dist/C
 
 <h3 id="110-api">API</h3>
 
-<h4 id="110-api-added">Added</h4>
+<h4 id="110-api-changed">Changed</h4>
 
 * Adjust the property names returned by  `useI18n` 
    *  `$t` -> `t` 
