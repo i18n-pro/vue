@@ -67,5 +67,6 @@
   "组合式 API": "Composition API",
   "选项式 API": "Options API",
   "注意：由于{0}和{1}是一个响应式的状态，使用时需要通过{2}的形式，类似如下：": "Note: Since {0} and {1} are reactive states, they need to be accessed with {2} when used, like the following:",
-  "调整{0}返回的属性名": "Adjust the property names returned by {0}"
+  "调整{0}返回的属性名": "Adjust the property names returned by {0}",
+  "限制{0}的版本": "Limit versions of {0}"
 }

@@ -2,12 +2,15 @@
 # 更新日志
 
 
-[English](https://github.com/i18n-pro/vue/blob/v1.1.0/docs/dist/CHANGELOG.md) | 简体中文
+[English](https://github.com/i18n-pro/vue/blob/v1.1.1/docs/dist/CHANGELOG.md) | 简体中文
 
 
 <details >
   <summary>目录</summary>
 
+  &emsp;&emsp;[[1.1.1] - 2025-06-23](#111---2025-06-23)<br/>
+  &emsp;&emsp;&emsp;&emsp;[API](#111-api)<br/>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Changed](#111-api-changed)<br/>
   &emsp;&emsp;[[1.1.0] - 2023-09-25](#110---2023-09-25)<br/>
   &emsp;&emsp;&emsp;&emsp;[API](#110-api)<br/>
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Changed](#110-api-changed)<br/>
@@ -16,6 +19,15 @@
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Added](#100-api-added)<br/>
 
 </details>
+
+## [1.1.1] - 2025-06-23
+
+<h3 id="111-api">API</h3>
+
+<h4 id="111-api-changed">Changed</h4>
+
+* 限制 `i18n-pro` 的版本
+
 
 ## [1.1.0] - 2023-09-25
 
