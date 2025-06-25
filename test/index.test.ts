@@ -2,6 +2,7 @@ import { render, fireEvent } from '@testing-library/vue'
 import '@testing-library/jest-dom'
 import Component from './App.vue'
 import { createI18n } from '../src/index'
+import { it, expect } from 'vitest'
 
 it.each([true, false])('with$ = %s : full test', async (with$) => {
   const i18n = createI18n({
@@ -61,8 +62,8 @@ it.each([true, false])('with$ = %s : full test', async (with$) => {
 
   await fireEvent.click(unknownBtn)
   expect(textWrapper).toHaveTextContent('你好世界')
-  expect(localeDiv).toHaveTextContent('')
-  expect(localeDiv2).toHaveTextContent('')
+  expect(localeDiv).toHaveTextContent('unknown')
+  expect(localeDiv2).toHaveTextContent('unknown')
 
   await fireEvent.click(jpBtn)
   expect(textWrapper).toHaveTextContent('こんにちは、世界')

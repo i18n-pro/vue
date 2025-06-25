@@ -2,12 +2,15 @@
 # Changelog
 
 
-English | [简体中文](https://github.com/i18n-pro/vue/blob/v1.1.1/docs/dist/CHANGELOG_zh-CN.md)
+English | [简体中文](https://github.com/i18n-pro/vue/blob/v2.0.0-alpha.0/docs/dist/CHANGELOG_zh-CN.md)
 
 
 <details >
   <summary>Table of Contents</summary>
 
+  &emsp;&emsp;[[2.0.0] - 2025-06-xx](#200---2025-06-xx)<br/>
+  &emsp;&emsp;&emsp;&emsp;[API](#200-api)<br/>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Changed](#200-api-changed)<br/>
   &emsp;&emsp;[[1.1.1] - 2025-06-23](#111---2025-06-23)<br/>
   &emsp;&emsp;&emsp;&emsp;[API](#111-api)<br/>
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Changed](#111-api-changed)<br/>
@@ -19,6 +22,15 @@ English | [简体中文](https://github.com/i18n-pro/vue/blob/v1.1.1/docs/dist/C
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Added](#100-api-added)<br/>
 
 </details>
+
+## [2.0.0] - 2025-06-xx
+
+<h3 id="200-api">API</h3>
+
+<h4 id="200-api-changed">Changed</h4>
+
+* Adapt  `i18n-pro@3` 
+
 
 ## [1.1.1] - 2025-06-23
 

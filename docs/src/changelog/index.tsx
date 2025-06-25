@@ -51,6 +51,18 @@ function V_1_1_1() {
   )
 }
 
+function V_2_0_0() {
+  return (
+    <Template
+      version="2.0.0"
+      date="2025-06-xx"
+      api={{
+        changed: ['U', t('适配{0}', ' `i18n-pro@3` ')],
+      }}
+    />
+  )
+}
+
 export default function ChangeLog(props) {
   initI18n(props)
 
@@ -59,6 +71,7 @@ export default function ChangeLog(props) {
       <H1 skip>{t('更新日志')}</H1>
       {renderLanguage('CHANGELOG')}
       <TableOfContents text={t('目录')} open={false} />
+      <V_2_0_0 />
       <V_1_1_1 />
       <V_1_1_0 />
       <V_1_0_0 />

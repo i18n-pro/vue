@@ -20,8 +20,8 @@ export function createI18n(props: I18nState & { with$?: boolean }) {
     const tRef = ref(i18n.t)
     const i18nStateRef = ref(i18nState)
 
-    const setI18n: SetI18n = (...args) => {
-      const newState = i18n.setI18n(...args)
+    const setI18n: SetI18n = async (...args) => {
+      const newState = await i18n.setI18n(...args)
       tRef.value = i18n.t.bind(null)
       i18nStateRef.value = newState
 

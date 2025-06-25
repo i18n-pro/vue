@@ -7,7 +7,7 @@
     <button id="enBtn" @click="currentSetI18n({ locale: 'en' })">
       English
     </button>
-    <button id="unknownBtn" @click="currentSetI18n({ locale: undefined })">
+    <button id="unknownBtn" @click="currentSetI18n({ locale: 'unknown' })">
       Unknown
     </button>
     <button id="jpBtn" @click="currentSetI18n2({
