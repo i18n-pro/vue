@@ -22,7 +22,7 @@ export function createI18n(props: I18nState & { with$?: boolean }) {
 
     const setI18n: SetI18n = async (...args) => {
       const newState = await i18n.setI18n(...args)
-      tRef.value = i18n.t.bind(null)
+      tRef.value = i18n.t.withLocale()
       i18nStateRef.value = newState
 
       return newState
