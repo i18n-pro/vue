@@ -51,11 +51,11 @@ To make internationalization easy and enjoyable 😄💪🏻
 # Live Demo
 
 * with$ = true
-   * [Open in CodeSandbox](https://codesandbox.io/p/github/i18n-pro/vue-demo/main?file=README.md)
-   * [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg "Open in StackBlitz")](https://stackblitz.com/github/i18n-pro/vue-demo/#main?file=README.md)
+   * [Open in CodeSandbox](https://codesandbox.io/p/github/i18n-pro/vue-demo/v2?file=README.md)
+   * [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg "Open in StackBlitz")](https://stackblitz.com/github/i18n-pro/vue-demo/tree/v2?file=README.md)
 * with$ = false
-   * [Open in CodeSandbox](https://codesandbox.io/p/github/i18n-pro/vue-demo/simple?file=README.md)
-   * [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg "Open in StackBlitz")](https://stackblitz.com/github/i18n-pro/vue-demo/tree/simple?file=README.md)
+   * [Open in CodeSandbox](https://codesandbox.io/p/github/i18n-pro/vue-demo/v2-simple?file=README.md)
+   * [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg "Open in StackBlitz")](https://stackblitz.com/github/i18n-pro/vue-demo/tree/v2-simple?file=README.md)
 
 
 # Principle

@@ -21,12 +21,12 @@ export default function LiveDemo() {
             [
               'U',
               <Link
-                href={`https://codesandbox.io/p/github/${githubKey}-demo/main?file=${filename}`}
+                href={`https://codesandbox.io/p/github/${githubKey}-demo/v2?file=${filename}`}
               >
                 Open in CodeSandbox
               </Link>,
               <Link
-                href={`https://stackblitz.com/github/${githubKey}-demo/#main?file=${filename}`}
+                href={`https://stackblitz.com/github/${githubKey}-demo/tree/v2?file=${filename}`}
               >
                 <Image
                   alt="Open in StackBlitz"
@@ -41,12 +41,12 @@ export default function LiveDemo() {
             [
               'U',
               <Link
-                href={`https://codesandbox.io/p/github/${githubKey}-demo/simple?file=${filename}`}
+                href={`https://codesandbox.io/p/github/${githubKey}-demo/v2-simple?file=${filename}`}
               >
                 Open in CodeSandbox
               </Link>,
               <Link
-                href={`https://stackblitz.com/github/${githubKey}-demo/tree/simple?file=${filename}`}
+                href={`https://stackblitz.com/github/${githubKey}-demo/tree/v2-simple?file=${filename}`}
               >
                 <Image
                   alt="Open in StackBlitz"
