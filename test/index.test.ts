@@ -10,6 +10,7 @@ it.each([true, false])('with$ = %s : full test', async (with$) => {
     langs: {
       en: {
         你好世界: 'Hello World',
+        'custom-key': 'Hello World',
       },
     },
     with$,
@@ -33,6 +34,9 @@ it.each([true, false])('with$ = %s : full test', async (with$) => {
   })
 
   const textWrapper = container.querySelector('#text') as HTMLDivElement
+  const customKeyTextWrapper = container.querySelector(
+    '#customKeyText',
+  ) as HTMLDivElement
 
   const zhBtn = container.querySelector('#zhBtn') as Element
   const enBtn = container.querySelector('#enBtn') as Element
@@ -42,31 +46,37 @@ it.each([true, false])('with$ = %s : full test', async (with$) => {
   const localeDiv2 = container.querySelector('#locale2') as Element
 
   expect(textWrapper).toHaveTextContent('你好世界')
+  expect(customKeyTextWrapper).toHaveTextContent('你好世界')
   expect(localeDiv).toHaveTextContent('')
   expect(localeDiv2).toHaveTextContent('')
 
   await fireEvent.click(enBtn)
   expect(textWrapper).toHaveTextContent('Hello World')
+  expect(customKeyTextWrapper).toHaveTextContent('Hello World')
   expect(localeDiv).toHaveTextContent('en')
   expect(localeDiv2).toHaveTextContent('en')
 
   await fireEvent.click(zhBtn)
   expect(textWrapper).toHaveTextContent('你好世界')
+  expect(customKeyTextWrapper).toHaveTextContent('你好世界')
   expect(localeDiv).toHaveTextContent('zh')
   expect(localeDiv2).toHaveTextContent('zh')
 
   await fireEvent.click(enBtn)
   expect(textWrapper).toHaveTextContent('Hello World')
+  expect(customKeyTextWrapper).toHaveTextContent('Hello World')
   expect(localeDiv).toHaveTextContent('en')
   expect(localeDiv2).toHaveTextContent('en')
 
   await fireEvent.click(unknownBtn)
   expect(textWrapper).toHaveTextContent('你好世界')
+  expect(customKeyTextWrapper).toHaveTextContent('你好世界')
   expect(localeDiv).toHaveTextContent('unknown')
   expect(localeDiv2).toHaveTextContent('unknown')
 
   await fireEvent.click(jpBtn)
   expect(textWrapper).toHaveTextContent('こんにちは、世界')
+  expect(customKeyTextWrapper).toHaveTextContent('こんにちは、世界')
   expect(localeDiv).toHaveTextContent('jp')
   expect(localeDiv2).toHaveTextContent('jp')
 })
