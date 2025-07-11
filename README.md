@@ -33,7 +33,7 @@ English | [简体中文](https://github.com/i18n-pro/vue/blob/v2.0.0-alpha.1/REA
 To make internationalization easy and enjoyable 😄💪🏻
 # Requirement
 
->The current library is only applicable to  `Vue 3` . If you need to support  `Vue 2` , please click  [i18n-pro/vue2](https://github.com/i18n-pro/vue2)  to view
+> The current library is only applicable to  `Vue 3` . If you need to support  `Vue 2` , please click  [i18n-pro/vue2](https://github.com/i18n-pro/vue2)  to view<br/>
 * vue >= **3.2.25**
 * i18n-pro >= **3.0.0** < **4.0.0**
 
@@ -103,7 +103,7 @@ createApp(App)
 
 # Help Document
 
->To avoid unnecessary duplicate document content, some of the documents in this library are linked to the content in  `i18n-pro` <br />The  `i18n-pro`  related link in the current document is based on the  `3.0.0-alpha.2`  version. If you are using a different version, you need to check the document corresponding to the version you are using to avoid inconsistent usage
+> To avoid unnecessary duplicate document content, some of the documents in this library are linked to the content in  `i18n-pro` <br/>> <br /><br/>> The  `i18n-pro`  related link in the current document is based on the  `3.0.0-alpha.2`  version. If you are using a different version, you need to check the document corresponding to the version you are using to avoid inconsistent usage<br/>
 * Current Library
    * [Quick Start](https://github.com/i18n-pro/vue/blob/v2.0.0-alpha.1/docs/dist/USAGE.md)
    * [API](https://github.com/i18n-pro/vue/blob/v2.0.0-alpha.1/docs/dist/API.md)

@@ -33,7 +33,7 @@
 为了让接入国际化成为轻松且愉快的事😄💪🏻
 # 要求
 
->当前库仅适用于 `Vue 3` , 需要支持 `Vue 2` 的请点击 [i18n-pro/vue2](https://github.com/i18n-pro/vue2) 查看
+> 当前库仅适用于 `Vue 3` , 需要支持 `Vue 2` 的请点击 [i18n-pro/vue2](https://github.com/i18n-pro/vue2) 查看<br/>
 * vue >= **3.2.25**
 * i18n-pro >= **3.0.0** < **4.0.0**
 
@@ -103,7 +103,7 @@ createApp(App)
 
 # 帮助文档
 
->为了避免不必要的重复文档内容，该库的部分文档是链接 `i18n-pro` 中的内容<br />当前文档中 `i18n-pro` 相关链接是基于 `3.0.0-alpha.2` 版本，如果你使用的非该版本，需查看你所使用版本对应的文档，以免用法不一致
+> 为了避免不必要的重复文档内容，该库的部分文档是链接 `i18n-pro` 中的内容<br/>> <br /><br/>> 当前文档中 `i18n-pro` 相关链接是基于 `3.0.0-alpha.2` 版本，如果你使用的非该版本，需查看你所使用版本对应的文档，以免用法不一致<br/>
 * 当前库
    * [快速上手](https://github.com/i18n-pro/vue/blob/v2.0.0-alpha.1/docs/dist/USAGE_zh-CN.md)
    * [API](https://github.com/i18n-pro/vue/blob/v2.0.0-alpha.1/docs/dist/API_zh-CN.md)
