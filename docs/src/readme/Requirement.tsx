@@ -1,8 +1,9 @@
-import { BlockQuote, H1, List, Link, render } from 'jsx-to-md'
+import { BlockQuote, H1, List, Link, render, Break } from 'jsx-to-md'
 
 export default function Requirement() {
   return (
     <>
+      <Break />
       <H1>{t('要求')}</H1>
       <BlockQuote>
         {t(

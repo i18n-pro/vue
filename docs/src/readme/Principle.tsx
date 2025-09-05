@@ -26,11 +26,14 @@ export default function Principle() {
       <Break />
       {t('简易示例如下')}
       <CodeBlock
-        langType="typescript react"
+        langType="jsx"
         code={`
 // App.vue
 <template>
-  {{ $t('hello world') }}
+  {/** ${t('文案即 key')} */}
+  <div>{{ $t('hello world') }}</div>
+  {/** ${t('自定义 key')} */}
+  <div>{{ $t.t('custom-key', 'hello world') }}</div>
 </template>
 
 // main.ts
@@ -44,9 +47,11 @@ const i18n = createI18n({
   langs: {
     zh: {
       'hello world': '你好世界',
+      'custom-key': '你好世界',
     },
     ja:{
       "hello world": "こんにちは世界",
+      'custom-key': 'こんにちは世界',
     },
   }
 })
