@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   i18n-pro:
-    specifier: 3.0.0-alpha.2
-    version: 3.0.0-alpha.2
+    specifier: 3.0.0
+    version: 3.0.0
   vue:
     specifier: ^3.2.25
     version: 3.2.25
@@ -122,17 +122,6 @@ packages:
       - supports-color
     dev: false
 
-  /@alicloud/credentials@2.4.3:
-    resolution: {integrity: sha512-r2thNtthchTz/c8/HryGSey1vY0UZx2FkAvb+vd+j7xhD/v/KUwnp8RJNQKNG3E4kfs4wSx2bgDSkcPAiXHQLQ==}
-    dependencies:
-      '@alicloud/tea-typescript': 1.8.0
-      httpx: 2.3.3
-      ini: 1.3.8
-      kitx: 2.2.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /@alicloud/credentials@2.4.4:
     resolution: {integrity: sha512-/eRAGSKcniLIFQ1UCpDhB/IrHUZisQ1sc65ws/c2avxUMpXwH1rWAohb76SVAUJhiF4mwvLzLJM1Mn1XL4Xe/Q==}
     dependencies:
@@ -238,7 +227,7 @@ packages:
   /@alicloud/openapi-client@0.4.14:
     resolution: {integrity: sha512-NiMDBszCyiH5HI9vHbkDhhDbFF3gMEJDHuPc2cAP0queLtrjPfU+d6/uhGVt44B9oC0q6f6vaJgptQ99fxxfnQ==}
     dependencies:
-      '@alicloud/credentials': 2.4.3
+      '@alicloud/credentials': 2.4.4
       '@alicloud/gateway-spi': 0.0.8
       '@alicloud/openapi-util': 0.3.2
       '@alicloud/tea-typescript': 1.8.0
@@ -312,7 +301,7 @@ packages:
   /@alicloud/oss-client@1.1.4:
     resolution: {integrity: sha512-xbFcZtcCJhR7UAdWnvccd9VJe4HD+Q+ovpdgbAzqHzWppjhiIKEXs9GEWS3kqclyoNzpz7lRG67GJA2KDzRtjA==}
     dependencies:
-      '@alicloud/credentials': 2.4.3
+      '@alicloud/credentials': 2.4.4
       '@alicloud/oss-baseclient': 1.2.0
       '@alicloud/oss-util': 0.0.3
       '@alicloud/rpc-util': 0.0.1
@@ -598,6 +587,7 @@ packages:
     hasBin: true
     dependencies:
       '@babel/types': 7.27.6
+    dev: true
 
   /@babel/parser@7.28.0:
     resolution: {integrity: sha512-jVZGvOxOuNSsuQuLRTh13nU0AogFlw32w/MT+LV6D3sP5WdbW61E77RnkbaO2dUvmPAYrBDJXGn5gGS6tH4j8g==}
@@ -605,7 +595,6 @@ packages:
     hasBin: true
     dependencies:
       '@babel/types': 7.28.0
-    dev: true
 
   /@babel/runtime@7.21.0:
     resolution: {integrity: sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==}
@@ -656,6 +645,7 @@ packages:
     dependencies:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
+    dev: true
 
   /@babel/types@7.28.0:
     resolution: {integrity: sha512-jYnje+JyZG5YThjHiF28oT4SIZLnYOcSBb6+SDaFIyzDVSkXQmQQYclJ2R+YxcdmK0AX6x1E5OQNtuh3jHDrUg==}
@@ -663,7 +653,6 @@ packages:
     dependencies:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
-    dev: true
 
   /@commitlint/cli@17.4.4:
     resolution: {integrity: sha512-HwKlD7CPVMVGTAeFZylVNy14Vm5POVY0WxPkZr7EXLC/os0LH/obs6z4HRvJtH/nHCMYBvUBQhGwnufKfTjd5g==}
@@ -759,7 +748,7 @@ packages:
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1(@types/node@18.15.1)(typescript@4.8.4)
+      ts-node: 10.9.1(@types/node@18.19.118)(typescript@4.8.4)
       typescript: 4.8.4
     transitivePeerDependencies:
       - '@swc/core'
@@ -2721,7 +2710,7 @@ packages:
     dependencies:
       '@types/node': 18.15.1
       cosmiconfig: 8.1.0
-      ts-node: 10.9.1(@types/node@18.15.1)(typescript@4.8.4)
+      ts-node: 10.9.1(@types/node@18.19.118)(typescript@4.8.4)
       typescript: 4.8.4
     dev: true
 
@@ -4123,8 +4112,8 @@ packages:
     hasBin: true
     dev: true
 
-  /i18n-pro@3.0.0-alpha.2:
-    resolution: {integrity: sha512-8Z+PFaUO5ePau8fnrZkaH9xdb6Wrs6ADrC5inAJxkC8nHm6tuJqLKRTlWU8qh4ZrGsM815S7Ds2A9XOixnQjQg==}
+  /i18n-pro@3.0.0:
+    resolution: {integrity: sha512-bOKOWnyt8QlP2S7KpFBGslM9Z/x5lyLBOfTLkIrhtn/cQj3ZuljdMRzIl3v9EygVALQIWRa2p7y62ZjN7d/ciw==}
     hasBin: true
     dependencies:
       '@alicloud/alimt20181012': 1.4.0
@@ -4574,7 +4563,7 @@ packages:
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
-      '@babel/parser': 7.27.5
+      '@babel/parser': 7.28.0
       '@jsdoc/salty': 0.2.9
       '@types/markdown-it': 14.1.2
       bluebird: 3.7.2
@@ -6392,7 +6381,7 @@ packages:
       - '@types/node'
     dev: true
 
-  /ts-node@10.9.1(@types/node@18.15.1)(typescript@4.8.4):
+  /ts-node@10.9.1(@types/node@18.19.118)(typescript@4.8.4):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -6411,7 +6400,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.15.1
+      '@types/node': 18.19.118
       acorn: 8.8.2
       acorn-walk: 8.2.0
       arg: 4.1.3
